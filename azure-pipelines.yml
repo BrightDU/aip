@@ -1,0 +1,27 @@
+trigger:
+- new-design
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '12.10.0'
+  displayName: 'Install Node.js'
+
+- script: |
+    npm install --production
+    npm install @emotion/react 
+    npm install @emotion/styled
+    NODE_ENV=production PUBLIC_URL=/ REACT_APP_API=$(api) REACT_APP_HOST=$(host) REACT_APP_TEST_API=$(testApi) REACT_APP_VIDEO_LINK=$(videoLink) REACT_APP_TAP_PK=$(tap_pk) npm run build
+  displayName: 'npm install and build' 
+
+- task: CopyFiles@2
+  inputs:
+    Contents: 'build/**' # Pull the build directory (React)
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+
+- task: PublishBuildArtifacts@1
+  inputs: 
+    pathtoPublish: $(Build.ArtifactStagingDirectory) # dist or build files
+    ArtifactName: 'build' # output artifact named www

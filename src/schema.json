@@ -1,0 +1,90 @@
+{
+    "id": "chg_TS053420211419m5BQ1308398",
+    "object": "charge",
+    "live_mode": false,
+    "api_version": "V2",
+    "method": "GET",
+    "status": "CAPTURED",
+    "amount": 800,
+    "currency": "SAR",
+    "threeDSecure": true,
+    "card_threeDSecure": false,
+    "save_card": false,
+    "merchant_id": "",
+    "product": "",
+    "statement_descriptor": "Sample",
+    "description": "Test Description",
+    "metadata": {},
+    "transaction": {
+      "authorization_id": "274138",
+      "timezone": "UTC+03:00",
+      "created": "1628864374415",
+      "expiry": {
+        "period": 30,
+        "type": "MINUTE"
+      },
+      "asynchronous": false,
+      "amount": 800,
+      "currency": "SAR"
+    },
+    "reference": {
+      "id": "ref_kdZsMqoBMrxwXdRAhmkWJS",
+      "track": "tck_TS023420211419Qr1p1308625",
+      "payment": "3413211419086257001",
+      "gateway": "123456789",
+      "acquirer": "122511274138",
+      "transaction": "txn_0001",
+      "order": "ord_0001"
+    },
+    "response": {
+      "code": "000",
+      "message": "Captured"
+    },
+    "security": {
+      "threeDSecure": {
+        "id": "3ds_TS033420211419s0K01308415",
+        "status": "Y"
+      }
+    },
+    "acquirer": {
+      "response": {
+        "code": "00",
+        "message": "Approved"
+      }
+    },
+    "card": {
+      "object": "card",
+      "first_six": "512345",
+      "brand": "MASTERCARD",
+      "last_four": "0008"
+    },
+    "receipt": {
+      "id": "203413211419084041",
+      "email": true,
+      "sms": false
+    },
+    "customer": {
+      "id": "cus_TS043420211419Tc401308701",
+      "first_name": "Noor Eldeen Ammar Jaber",
+      "email": "jabernoorjo@gmail.com",
+      "phone": {
+        "country_code": "966",
+        "number": "795865658"
+      }
+    },
+    "source": {
+      "object": "token",
+      "type": "CARD_NOT_PRESENT",
+      "payment_type": "CREDIT",
+      "payment_method": "MASTERCARD",
+      "channel": "INTERNET",
+      "id": "tok_GW7I1321118xKkD13cp7q112"
+    },
+    "redirect": {
+      "status": "SUCCESS",
+      "url": "http://localhost:3000/checkout?subscription=6518c670-0098-452a-a152-76d44da26c87&planId=0075fe7b-4271-4fec-9509-743a0b682a90&token=6116525676ab5406ef717176&mode=popup"
+    },
+    "post": {
+      "status": "PENDING"
+    }
+  }
