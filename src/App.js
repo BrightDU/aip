@@ -6,6 +6,7 @@ import Checkout from './Checkout';
 import Homepage from './Homepage';
 import strings from './translations';
 import { TermsAndConditions } from './TermsAndConditions';
+import Tutorial from './components/TutorialSection/Tutorial';
 import Faq from './Faq';
 import FreeSubscription from './FreeSubscription';
 import TemporaryDrawer from './sidebar'
@@ -197,6 +198,7 @@ class App extends Component {
                     <Route path="/checkout" exact component={Checkout} />
                     <Route path="/terms-and-conditions" exact component={TermsAndConditions} />
                     <Route path="/faq" exact component={Faq} />
+                    <Route path="/tutorial" component={Tutorial} /> {/* ✅ Add this route */}
                     <Route path="/demo" exact component={FreeSubscription} />
                 </Switch>
 

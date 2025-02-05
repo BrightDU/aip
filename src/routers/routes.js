@@ -24,6 +24,7 @@ import Login from "../components/Accounts/Login";
 import Signup from "../components/Accounts/Signup";
 import Forgot from "../components/Accounts/Forgot";
 import Faq from "../components/FaqSection/Faq";
+import TutorialPage from "../components/TutorialSection/Tutorial";
 import ErrorPage from "../components/ErrorPage/404";
 import ContactPage from "../components/ContactSection/ContactPage";
 import App from '../App'
@@ -116,6 +117,10 @@ class MyRouts extends React.Component {
             <Route path="/faq">
               <Faq changeLanguage={this.changeLanguage} />
             </Route>
+
+            <Route path="/tutorial">
+              <TutorialPage changeLanguage={this.changeLanguage} />
+            </Route>
             <Route path="/contact-page" component={ContactPage} />
             {/* <Route path="/" exact component={() => <Homepage {...this.props} locale={this.state.locale} />} /> */}
             <Route path="/checkout" exact component={()=><TotalCheckout platformSettings={this.state.platformSettings}/>} />
@@ -126,6 +131,7 @@ class MyRouts extends React.Component {
               <Checkout/>
             </Route> */}
             <Route path="/terms-and-conditions" exact component={TermsAndConditions} />
+            
             {/* <Route path="/faq" exact component={Faq} /> */}
             <Route path="/demo" exact component={()=><TotalFreeSubscribtion platformSettings={this.state.platformSettings}/>} />
             <Route path="*" component={ErrorPage} />

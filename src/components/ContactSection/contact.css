@@ -1,0 +1,15 @@
+/* Default styling */
+/* Default styling */
+.submit-btn {
+    margin-right: 0; /* No margin by default */
+  }
+  
+  /* Apply margin-right only on small screens */
+  @media (max-width: 576px) {  /* Adjust for mobile screens */
+    .submit-btn {
+      margin-left: -2px; /* Adjust margin as needed */
+     
+    }
+  }
+  
+  

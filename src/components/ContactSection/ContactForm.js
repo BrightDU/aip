@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import '../ContactSection/contact.css'
 import strings from '../../translations';
 import axios from 'axios';
 import ReCAPTCHA from "react-google-recaptcha";
@@ -90,7 +91,7 @@ class ContactForm extends Component {
     }
 
     return (
-      <div className="contact-box text-center">
+      <div className="contact-box text-center" >
         {this.state.error ? <div className="contact-box text-center">
         <span>{this.state.error}</span>
       </div>:''}
@@ -100,9 +101,60 @@ class ContactForm extends Component {
           className="contact-form"
           noValidate="novalidate"
         >
+
+<style>
+      {`
+        input::placeholder, textarea::placeholder {
+          
+        
+        }
+
+        .contact-area {
+              padding-top: 120px;
+              padding-bottom: 130px;
+              background-color: #f4f6f7;
+              
+        }
+
+
+        .contact-box .form-group input, .contact-box .form-group textarea {
+    font-size: 14px;
+    height: 60px;
+    padding: 0 15px;
+   
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.contact-box .form-group textarea{
+height: 180px;
+color: black;
+
+}
+
+
+.form-select {
+    width: 100%;
+    padding: .8rem;
+     font-size: 14px;
+    height: 60px;
+     border-radius: 20px;
+    color: #00b489;
+    /* opacity: 0.5; */
+}
+
+       
+
+      `}
+    </style>
           <div className="row">
             <div className="col-12">
-              <div className="form-group">
+              <div className="form-group" >
                 <input
                   onChange={(e) => this.setState({ name: e.target.value })}
                   type="text"
@@ -118,17 +170,17 @@ class ContactForm extends Component {
               <div className="form-group">
                 <input
                   type="email"
-                  className="form-control"
+                  className="form-control"  
                   name="email"
                   placeholder={strings.email}
                   required="required"
                  
                   value={this.state.email}
-                  style={{textAlign: strings.direction}}
+                  style={{textAlign: strings.direction }}
                   onChange={(e) => this.setState({ email: e.target.value })}
                 />
               </div>
-              <div className="form-group">
+              <div className="form-group" >
                 <input
                   type="tel"
                   className="form-control"
@@ -240,7 +292,7 @@ class ContactForm extends Component {
               {!this.state.showCaptcha ? <button
                 onClick={() => this.setState({ showCaptcha: true })}
                 type="submit"
-                className="btn btn-lg btn-block mt-3"><span className="text-white pr-3"><i className="fas fa-paper-plane" /></span>
+                className="btn btn-lg btn-block mt-3 submit-btn" style={{fontSize:'25px', color:'#ffffff'}}><span className="text-white pr-3" ></span>
                 {strings.send}
               </button> : <div className="text-center" style={{ margin: 'auto' }}>
                 <ReCAPTCHA

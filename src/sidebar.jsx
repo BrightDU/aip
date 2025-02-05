@@ -73,6 +73,18 @@ export default function TemporaryDrawer(props) {
                                             </li>
                                         </ul> */}
               </li>
+
+              <li className="nav-item">
+                <a className="nav-link" href="/faq">{strings.About}</a>
+              </li>
+
+              <If condition={window.location.pathname === '/'}>
+                <Then>
+                  <li className="nav-item">
+                    <a className="nav-link scroll" href="#pricing">{strings.pricing}</a>
+                  </li>
+                </Then>
+              </If>
               <li className="nav-item">
                 <a className="nav-link" href="/faq">{strings.faq}</a>
               </li>
@@ -159,17 +171,15 @@ export default function TemporaryDrawer(props) {
               <li className="nav-item">
                 <a target="_blank" className="nav-link" href={`/terms-and-conditions-${strings.getLanguage()}.pdf`}>{strings.termsAndConditions}</a>
               </li>
-              <If condition={window.location.pathname === '/'}>
-                <Then>
-                  <li className="nav-item">
-                    <a className="nav-link scroll" href="#pricing">{strings.pricing}</a>
-                  </li>
-                </Then>
-              </If>
+             
               <li className="nav-item">
                 <a className="nav-link scroll" href="#contact">{strings.contactUs}</a>
               </li>
               <li>
+
+              <li className="nav-item">
+                <a className="nav-link" href="/faq">{strings.Tutorial}</a>
+              </li>
                 {/* <div className="navbar2" style={{ textAlign: 'end' }}>
                                           </div> */}
                   <Divider />
@@ -193,15 +203,22 @@ export default function TemporaryDrawer(props) {
     <div className="navItem">
       {[strings.direction].map((anchor) => (
         <React.Fragment key={anchor}>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            onClick={toggleDrawer(anchor, true)}
-            edge="start"
-            sx={{ mr: 2, ...(state.opened && { display: 'none' }) }}
-          >
-            <MenuIcon />
-          </IconButton>
+        <IconButton
+  color="inherit"
+  aria-label="open drawer"
+  onClick={toggleDrawer(anchor, true)}
+  edge="start"
+  sx={{
+    mr: 0, // Remove right margin
+    ml: -10, // Remove left margin
+    ...(state.opened && { display: 'none' }),
+    color: 'white' // Set the icon color to white
+  }}
+>
+  <MenuIcon sx={{ color: 'white' }} />
+</IconButton>
+
+
           <Drawer
             anchor={anchor}
             open={state[anchor]}

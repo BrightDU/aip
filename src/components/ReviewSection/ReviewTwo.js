@@ -79,8 +79,8 @@ class ReviewSection extends Component {
                     </div>
                     </div>
                 </div> */}
-                 <section id="" className="video-area" style={{ marginTop: '30px' }}>
-                    <div className="container" style={{ height: '100%' }}>
+                 <section id="" className="video-area" style={{ marginTop: '10px' }}>
+                    <div className="container" style={{ height: '500px' }}>
                         <div className="row justify-content-center">
                             <div className="col-lg-6 col-md-10">
                                 <div className="section-title text-center pb-25">

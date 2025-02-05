@@ -367,6 +367,7 @@
         width: 50%;
         background: #7e8085;
         display: inline-block;
+        
     }
 
     .navbar-dark .navbar-toggler-icon {
@@ -429,59 +430,7 @@
     }
 }
 
-/* ******************************
-:: 3.0 WELCOME AREA CSS
-****************************** */
-@media (max-width: 991px) {
-    .welcome-area,
-    .inner .welcome-area {
-        height: 700px !important;
-    }
 
-    .homepage-3 .welcome-area .subscribe-form {
-        width: 100%;
-    }
-
-    .homepage-5 .welcome-area {
-        height: 1150px !important;
-    }
-}
-
-@media (max-width: 767px) {
-    .welcome-area,
-    .homepage-5 .welcome-area,
-    .inner-pages.signup .h-100vh {
-        height: 100% !important;
-        padding-top: 90px;
-    }
-
-    .welcome-intro {
-        margin-top: 30px;
-    }
-
-    .welcome-thumb {
-        max-width: 270px;
-        padding-top: 20px;
-    }
-
-    .homepage-4 .welcome-thumb {
-        max-width: 350px;
-    }
-}
-
-@media (max-width: 575px) {
-    .welcome-intro {
-        margin-top: 0;
-    }
-
-    .homepage-3 .welcome-area .subscribe-form input {
-        text-indent: 0;
-    }
-
-    .welcome-thumb {
-        max-width: 230px;
-    }
-}
 
 /* ******************************
 :: 4.0 FEATURES AREA CSS
@@ -545,7 +494,7 @@
 ****************************** */
 @media (max-width: 767px) {
     .plan-price > h1 {
-        font-size: 4em;
+        font-size: 200px;
     }
 
     .plan-button {
@@ -611,3 +560,8 @@
         margin-bottom: 0;
     }
 }
+
+
+
+
+

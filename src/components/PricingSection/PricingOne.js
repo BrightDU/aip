@@ -67,7 +67,7 @@ class PricingSection extends Component {
                     <div className="row justify-content-center">
                         <div className="col-12 col-md-10 col-lg-7">
                             {/* Section Heading */}
-                            <div className="section-heading text-center">
+                            <div className="section-heading text-center" style={{marginTop:'50px'}}>
                                 <h2>{strings.pricingPlans}</h2>
                                 {/* <p className="d-none d-sm-block mt-4">{this.state.data.headingText}</p>
                                 <p className="d-block d-sm-none mt-4">{this.state.data.headingTexttwo}</p> */}

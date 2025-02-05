@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Header from '../components/HeaderSection/Header';
 import HeroSection from '../components/HeroSection/HeroOne';
+import AboutPage from '../components/Aboutsection/Newabout';
 import Counter from '../components/CounterSection/Counter';
 import FeatureSection from '../components/Features/FeatureOne';
 import ServiceSection from '../components/ServiceSection/ServiceOne';
@@ -29,6 +30,7 @@ class ThemeOne extends Component {
                 <div className="main">
                     <Header imageData={"/img/company_logo.svg"} />
                     <HeroSection />
+                    <AboutPage/>
                     <Counter />
                     <FeatureSection />
                     <ServiceSection />

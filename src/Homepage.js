@@ -125,10 +125,11 @@ export const Homepage = (props) => {
                                         <img src="/assets/layout/images/logo-white.svg" style={{ height: "4.25rem" }} alt="Logo" />
                                     </a>
 
-                                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTwo" aria-controls="navbarTwo" aria-expanded="false" aria-label="Toggle navigation">
+                                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTwo" aria-controls="navbarTwo" aria-expanded="false" aria-label="Toggle navigation" style={{color:'white'}}>
                                         <span className="toggler-icon"></span>
                                         <span className="toggler-icon"></span>
                                         <span className="toggler-icon"></span>
+                                        
                                     </button>
                                 </nav>
                             </div>

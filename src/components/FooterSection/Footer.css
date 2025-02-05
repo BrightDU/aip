@@ -1,0 +1,106 @@
+@media (max-width: 768px) {  
+    .footer-area {
+        height: 1140px!important; /* Adjust height dynamically */
+        padding: 20px 15px; /* Add padding for spacing */
+        text-align: left; /* Center align content */
+        
+    }
+     .footer-logo{
+            margin-top: 100px;
+            padding-top: 80px;
+            align-items: left !important;
+            padding-left: -80px;
+          
+           
+     }
+
+     
+
+     
+     
+     
+    .footer-title {
+        font-size: 28px !important; /* Adjust title size for mobile */
+        margin-top: 30px !important;
+    }
+   
+
+    .footer-items {
+        margin-bottom: 30px; /* Add space between footer sections */
+       
+        
+    }
+
+    .store-buttons {
+        flex-direction: row !important; /* Stack app store buttons */
+        align-items: center !important;
+    }
+
+    .store-buttons img {
+        width: 150px !important; /* Reduce button size */
+        margin-bottom: 10px;
+    }
+
+    .social-icons {
+        justify-content: left !important; /* Center social icons */
+        gap: 10px;
+    }
+    .address{
+       
+        text-align: left;
+        font-size: 20px !important; /* Adjust title size for mobile */
+       
+    }
+
+    .phone{
+        text-align: left;
+        font-size: 18px !important; /* Adjust title size for mobile */
+        font-weight: bold;
+
+    }
+    
+
+    .email{
+        text-align: left;
+        font-size: 18px !important; /* Adjust title size for mobile */
+        
+    }
+
+   
+
+   
+
+    .social-icons a img {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .copyright-center {
+        font-size: 12px !important;
+        margin-top: 190px !important;
+    }
+
+
+
+
+
+
+
+    
+}
+
+
+
+/* Default Styling */
+#footer-logo-section {
+    margin-top: -70px; /* Default margin */
+}
+
+/* Mobile Styling */
+@media (max-width: 768px) {
+    #footer-logo-section {
+        margin-top: 20px !important; /* Adjust the value for mobile screens */
+        margin-left: -65px;
+    }
+}
+
