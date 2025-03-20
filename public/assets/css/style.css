@@ -1433,13 +1433,13 @@ img {
 /* ******************************
 :: 17.0 PRICE PLAN AREA CSS
 ****************************** */
-.single-price-plan {
+/* .single-price-plan {
     -webkit-box-shadow: 0 0.313rem 0.875rem rgba(45, 49, 54, 0.09);
     box-shadow: 0 0.313rem 0.875rem rgba(45, 49, 54, 0.09);
     background-color: #039b9152;
     border-radius: 1rem;
     margin-bottom: 2rem;
-}
+} */
 
 .plan-title > h3 {
     /* letter-spacing: 3px; */

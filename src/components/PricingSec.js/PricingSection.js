@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import strings from "../../translations";
 import PlanTerms from "../../PlanTerms";
 import { Link } from "react-router-dom";
+import { colors } from "@mui/material";
 
 class PricingSection extends Component {
   constructor(props) {
@@ -181,8 +182,10 @@ class PricingSection extends Component {
                     {/* Select Plan Button */}
                     <Link
                       to={`/checkout?planId=${item.uuid}&freq=${freq}`}
-                      className="custom-select-btn"
-                    >
+                      className="custom-select-btn" style={{color:'#ffffff'}} 
+                      
+                    > 
+                    
                       {currentStrings.select || "Select"}
                     </Link>
                   </div>
@@ -342,6 +345,7 @@ class PricingSection extends Component {
               box-shadow: 0px 5px 20px rgba(0,0,0,0.08);
              
               color: #fff;
+              hover:color:#fff;
               font-weight: bold;
               border: none;
               display: flex;
