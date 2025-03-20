@@ -70,49 +70,56 @@ export default function TemporaryDrawer(props) {
 
             <Divider />
 
-            {/* ✅ Sign In Button */}
-            <li className="nav-item" style={{ marginTop: '15px' }}>
-              <button
-                className="btn"
-                style={{
-                  width: '100%',
-                  background: 'none',
-                  border: '2px solid black',
-                  borderRadius: 0,
-                  padding: '10px',
-                  fontWeight: 'bold',
-                  color: 'black',
-                  cursor: 'pointer',
-                }}
-                onClick={() => {
-                  // Add Sign In logic
-                }}
-              >
-                 {strings.Signin}
-              </button>
-            </li>
+           {/* ✅ Sign In Button */}
+<li className="nav-item" style={{ marginTop: '15px' }}>
+  <a
+    href="https://staging.aiprice.armsit.com/signin"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="btn"
+    style={{
+      width: '100%',
+      background: 'none',
+      border: '2px solid black',
+      borderRadius: 0,
+      padding: '10px',
+      fontWeight: 'bold',
+      color: 'black',
+      cursor: 'pointer',
+      textAlign: 'center',
+      display: 'inline-block',
+      textDecoration: 'none',
+    }}
+  >
+    {strings.Signin}
+  </a>
+</li>
 
-            {/* ✅ Sign Up Button */}
-            <li className="nav-item" style={{ marginTop: '10px' }}>
-              <button
-                className="btn"
-                style={{
-                  width: '100%',
-                  background: 'linear-gradient(245.49deg, #00998A 15.66%, #71C6BE 84.34%)',
-                  border: 'none',
-                  borderRadius: 0,
-                  padding: '10px',
-                  fontWeight: 'bold',
-                  color: 'white',
-                  cursor: 'pointer',
-                }}
-                onClick={() => {
-                  // Add Sign Up logic
-                }}
-              >
-                 {strings.SignUp}
-              </button>
-            </li>
+{/* ✅ Sign Up Button */}
+<li className="nav-item" style={{ marginTop: '10px' }}>
+  <a
+    href="https://staging.aiprice.armsit.com/signup"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="btn"
+    style={{
+      width: '100%',
+      background: 'linear-gradient(245.49deg, #00998A 15.66%, #71C6BE 84.34%)',
+      border: 'none',
+      borderRadius: 0,
+      padding: '10px',
+      fontWeight: 'bold',
+      color: 'white',
+      cursor: 'pointer',
+      textAlign: 'center',
+      display: 'inline-block',
+      textDecoration: 'none',
+    }}
+  >
+    {strings.SignUp}
+  </a>
+</li>
+
 
             {/* ✅ Language Switch Button */}
             <li className="nav-item" style={{ marginTop: '20px' }}>
