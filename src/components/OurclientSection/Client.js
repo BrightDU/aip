@@ -5,13 +5,13 @@ import strings from '../../translations';
 let API = process.env.REACT_APP_API;
 
 const dummyData = [
-  { id: "1", image: "/img/landing page assets/Ejada logo.png" },
-  { id: "2", image: "/img/landing page assets/Safran logo.png" },
-  { id: "3", image: "/img/landing page assets/Jomel logo.png" },
-  { id: "4", image: "/img/landing page assets/Bacs logo.png" },
-  { id: "5", image: "/img/landing page assets/Al rashed food.png" },
-  { id: "6", image: "/img/landing page assets/Creative feature logo.png" },
-  { id: "7", image: "/img/landing page assets/Engie logo.png" },
+  { id: "1", image: "/img/Landing page assets/Ejada logo.png" },
+  { id: "2", image: "/img/Landing page assets/Safran logo.png" },
+  { id: "3", image: "/img/Landing page assets/Jomel logo.png" },
+  { id: "4", image: "/img/Landing page assets/Bacs logo.png" },
+  { id: "5", image: "/img/Landing page assets/Al rashed food.png" },
+  { id: "6", image: "/img/Landing page assets/Creative feature logo.png" },
+  { id: "7", image: "/img/Landing page assets/Engie logo.png" },
 ];
 
 class OurclientSection extends Component {
