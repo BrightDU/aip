@@ -168,7 +168,7 @@ class Header extends Component {
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href={`/terms-and-conditions-${strings.getLanguage()}.pdf`} style={styles.navLink}>
+                                    <a className="nav-link" href='/#' style={styles.navLink}>
                                         {strings.termsAndConditions}
                                     </a>
                                 </li>
@@ -186,28 +186,30 @@ class Header extends Component {
 
                         <div className="d-flex align-items-center">
                             {/* Sign In Button */}
-                            <button
-                                className="btn sign-in-btn"
-                                style={styles.signInBtn}
-                                onClick={() => {
-                                    // Add your sign in logic here
-                                }}
-                            >
-                                 {strings.Signin}
-                            </button>
+                        <button
+                        className="btn sign-in-btn"
+                        style={styles.signInBtn}
+                        onClick={() => {
+                            window.open('https://staging.aiprice.armsit.com/signin', '_blank');
+                        }}
+                        >
+                        {strings.Signin}
+                        </button>
+
+                        
 
                             {/* Add gap between Sign In and Sign Up */}
                             <div style={{ marginLeft: '15px' }} />
 
                             {/* Sign Up Button */}
                             <button
-                                className="btn login-btn"
-                                style={styles.loginBtn}
-                                onClick={() => {
-                                    // Add your sign up logic here
-                                }}
+                            className="btn login-btn"
+                            style={styles.loginBtn}
+                            onClick={() => {
+                                window.open('https://staging.aiprice.armsit.com/signup', '_blank');
+                            }}
                             >
-                                 {strings.SignUp}
+                            {strings.SignUp}
                             </button>
 
                             {/* Search Icon inside a bordered box */}
