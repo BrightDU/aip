@@ -87,7 +87,7 @@ submitButton: "SEND",
 successMessage: "Thank you! Your message has been sent.",
 errorMessage: "Please fill all fields.",
 More: "More", // Add this key for the button text
-Starttrial: "Start Free Trial", // Add this key for the button text
+Starttrial: " Free Trial", // Add this key for the button text
 
     // contact section  
 
@@ -397,7 +397,7 @@ SignUp: 'إنشاء حساب',
         bank: "تحويل بنكي",
         video: "فيديو تعريفي",
         More: "المزيد",
-        Starttrial: "ابدأ التجربة المجانية",
+        Starttrial: "تجربة مجانية",
         featureheadsub: "حل تحسين الأسعار سيغير عملك تمامًا بميزات مثل",
         feature1Title: 'بدء تعديلات التسعير في الوقت الفعلي،',
 feature2Title: 'مراقبة أسعار المنافسين،',
