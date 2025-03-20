@@ -1,3 +1,10 @@
+
+.social-icons img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+  }
+
 @media (max-width: 768px) {  
     .footer-area {
         height: 1140px!important; /* Adjust height dynamically */
@@ -72,12 +79,21 @@
 
     .social-icons a img {
         width: 40px !important;
-        height: 40px !important;
+        height: 50px !important;
+        
+
+
+
+
     }
+
+    
+      
 
     .copyright-center {
         font-size: 12px !important;
         margin-top: 190px !important;
+        flex-direction: column;
     }
 
 

@@ -8,8 +8,8 @@ import ServiceSection from "../components/ServiceSection/ServiceFive";
 import DiscoverSection from "../components/DiscoverSection/DiscoverFive";
 import Work from "../components/WorkSection/Work";
 import ScreenshotSection from "../components/ScreenshotSection/ScreenshotsTwo";
-import ReviewSection from "../components/ReviewSection/ReviewTwo";
-import PricingSection from "../components/PricingSection/PricingOne";
+// import ReviewSection from "../components/ReviewSection/ReviewTwo";
+import PricingSection from '../components/PricingSec.js/PricingSection'
 import FaqSection from "../components/FaqSection/FaqOne";
 import Download from "../components/DownloadSection/Download";
 import Subscribe from "../components/SubscribeSection/Subscribe";
@@ -19,9 +19,10 @@ import FooterSection from "../components/FooterSection/Footer";
 import Counter from "../components/CounterSection/Counter";
 import * as FeatureSection2 from "../components/Features/FeatureThree";
 import strings from "../translations";
-import Branding from "../components/BrandingSection/Branding";
+import Client from "../components/OurclientSection/Client";
 import { Route } from "react-router-dom";
-import GoPay from "./gopay";
+import GoPay from "../components/Gopay/gopay";
+
 
 class ThemeFive extends Component {
   constructor(props) {
@@ -72,26 +73,36 @@ class ThemeFive extends Component {
           {/* <Header imageData={"/img/company_logo.svg"}  changeLanguage={this.changeLanguage}/> */}
           <HeroSection platformSettings={this.props.platformSettings} />
           <AboutPage />
+          <Counter />
+          <GoPay />
+
+          
 
           <FeatureSection2.default />
+          <FeatureSection />
          
-          <Counter />
-          <ReviewSection />
-          <PricingSection {...this.props} locale={this.state.locale} />
+          {/* <ReviewSection /> */}
+         
+         
+         
 
-          {/* <GoPay /> */}
+          
 
           {/* <DiscoverSection /> */}
-          <Team />
-          <Branding />
+         
+          
+          <Client />
+          <PricingSection {...this.props} locale={this.state.locale} />
 
-          <FeatureSection />
+         
+         
           {/* <ServiceSection /> */}
           {/* <ScreenshotSection /> */}
           {/* <Work /> */}
           {/* <FaqSection /> */}
           {/* <Download />
                     <Subscribe /> */}
+                    <Team />
           <ContactSection />
           {/* <FooterSection /> */}
         </div>

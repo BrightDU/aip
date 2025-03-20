@@ -25,111 +25,158 @@ class FeatureSection extends Component {
 
     render() {
         const features = [
-            {
-                title: strings.feature1Title,
-                description: strings.feature1Description,
-                imgSrc: './img/zatca-logo.png',
-            },
-            {
-                title: strings.feature2Title,
-                description: strings.feature2Description,
-                imgSrc: './img/Dollar.png',
-            },
-            {
-                title: strings.feature3Title,
-                description: strings.feature3Description,
-                imgSrc: './img/Secure.png',
-            },
-            {
-                title: strings.feature5Title,
-                description: strings.feature5Description,
-                imgSrc: './img/Simple.png',
-            },
-            {
-                title: strings.feature6Title,
-                description: strings.feature6Description,
-                imgSrc: './img/Layout.png',
-            },
-            {
-                title: strings.feature4Title,
-                description: strings.feature4Description,
-                imgSrc: './img/Cloud.png',
-            },
+            { title: strings.feature1Title, description: strings.feature1Description, imgSrc: '/img/landing page assets/cash icon.png' }, // Top
+            { title: strings.feature2Title, description: strings.feature2Description, imgSrc: '/img/landing page assets/Coins icon.png' },      // Right-top
+            { title: strings.feature3Title, description: strings.feature3Description, imgSrc: '/img/landing page assets/Ai icon.png' },     // Right-bottom
+            { title: strings.feature4Title, description: strings.feature4Description, imgSrc: '/img/landing page assets/Mobile phone icon.png' },      // Bottom
+            { title: strings.feature5Title, description: strings.feature5Description, imgSrc: '/img/landing page assets/Comprehensive icon.png' },     // Left-bottom
+            { title: strings.feature6Title, description: strings.feature6Description, imgSrc: '/img/landing page assets/Access dashboard icon.png' }      // Left-top
         ];
 
+
+
         return (
-            <section id="features" className="feature-section-wrapper" style={{ backgroundColor: '#F2F9F9', width: '100%' }}>
+            <section id="features" className="feature-section-wrapper" style={{ backgroundColor: '#F3F9F9', width: '100%' }}>
                 {/* Section Heading */}
                 <div className="section-heading">
-                    <h2 style={{ textAlign: 'center', marginBottom: '20px' }}>{strings.featureHear}</h2>
+                <h2 className='head-text'>{strings.featureHear}</h2>
+<p className='headsubtext'>{strings.featureheadsub}</p>
+
                 </div>
-                <div className="container">
+
+                <div className="circle-container">
                     {features.map((feature, index) => (
-                        <div key={index} className="features-item">
+                        <div key={index} className={`circle-item position-${index}`}>
+
                             <img src={feature.imgSrc} alt={feature.title} />
                             <h3>{feature.title}</h3>
                             <p>{feature.description}</p>
                         </div>
                     ))}
                 </div>
+
                 <style jsx>{`
-                    .feature-section-wrapper .container {
+
+                .head-text {
+  text-align: center;
+  margin-top: 0px; /* You can adjust this as needed */
+  margin-bottom: 20px;
+  font-family: 'Acumin Variable Concept', sans-serif;
+  font-weight: 700;
+  padding-top:20px;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #009889;
+}
+
+.headsubtext {
+  text-align: center;
+  margin-top: 10px; /* Reduced margin top */
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: #000000;
+  font-weight:bold;
+}
+
+                    .circle-container {
+                        position: relative;
+                        width: 500px;
+                        height: 500px;
+                        margin: 0 auto;
+                        border-radius: 50%;
                         display: flex;
-                        flex-wrap: wrap;
-                        gap: 35px; /* Adjusts space between grid items */
+                        justify-content: center;
+                        align-items: center;
                     }
-            
-                    .feature-section-wrapper .features-item {
-                        flex: 1 1 calc(33.333% - 30px); /* Desktop: Items in a grid */
-                        max-width: calc(33.333% - 30px);
-                        text-align: left; /* Default: Left-aligned content */
-                        padding: 0;
-                        box-sizing: border-box;
-                    }
-            
-                    .feature-section-wrapper .features-item img {
-                        width: 64px;
-                        height: 64px;
-                        margin-bottom: 10px;
-                    }
-            
-                    .feature-section-wrapper .features-item h3 {
-                        font-size: 23px;
-                        font-weight: bold;
-                        margin-bottom: 10px;
-                        color: #1D2130;
-                    }
-            
-                    .feature-section-wrapper .features-item p {
-                        font-size: 15px;
-                        color: #525560;
-                        width: 100%; /* Let text expand naturally */
-                        margin: 0;
-                    }
-            
-                    /* Media Query for Mobile Devices */
-                    @media (max-width: 768px) {
-                        .feature-section-wrapper .features-item {
-                            flex: 1 1 100%;
-                            max-width: 100%;
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center; /* Center items horizontally */
-                            text-align: center; /* Center-align text */
-                        }
-            
-                        .feature-section-wrapper .features-item img {
-                            margin-bottom: 10px;
-                        }
-            
-                        .feature-section-wrapper .features-item h3 {
-                            font-size: 16px;
-                        }
-            
-                        .feature-section-wrapper .features-item p {
-                            font-size: 12px;
-                        }
-                    }
+
+                   
+.circle-item {
+  position: absolute;
+  text-align: center;
+  width: 450px; /* slightly increased */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+
+.circle-item img {
+  width: 54px;
+  height: 64px;
+  margin-bottom: 10px;
+}
+
+.circle-item h3 {
+  font-size: 13px;
+  font-weight: bold;
+  margin: 8px 0 4px;
+  color: #1D2130;
+  white-space: nowrap; /* ✅ Prevents breaking */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%; /* ensures ellipsis works within container width */
+}
+
+.circle-item p {
+  font-size: 12px;
+  color: #525560;
+  line-height: 1.3;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .circle-container {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: start;
+    border-radius: 0;
+    padding: 20px;
+    position: static; /* Remove relative positioning */
+  }
+
+  .circle-item {
+    position: static !important; /* ⬅ override absolute positioning */
+    width: 100px;
+    text-align: center;
+  }
+
+  .circle-item img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .circle-item h3 {
+    font-size: 12px;
+    white-space: normal; /* ⬅ allow wrapping on mobile now */
+    overflow: visible;
+    text-overflow: unset;
+  }
+
+  .circle-item p {
+    font-size: 10px;
+  }
+}
+
+/* Positioning for desktop only */
+@media (min-width: 769px) {
+  .position-0 { top: 2%; left: 50%; transform: translate(-50%, 0); position: absolute; }
+  .position-1 { top: 35%; left: 98%; transform: translate(-50%, -50%); position: absolute; }
+  .position-2 { top: 65%; left: 98%; transform: translate(-50%, -50%); position: absolute; }
+  .position-3 { top: 95%; left: 50%; transform: translate(-50%, -100%); position: absolute; }
+  .position-4 { top: 65%; left: 3%; transform: translate(-50%, -50%); position: absolute; }
+  .position-5 { top: 35%; left: 3%; transform: translate(-50%, -50%); position: absolute; }
+}
+
+
+
                 `}</style>
             </section>
         );
@@ -137,5 +184,7 @@ class FeatureSection extends Component {
 }
 
 export default FeatureSection;
+
+
 
 

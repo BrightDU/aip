@@ -8,7 +8,7 @@ import DiscoverSection from '../components/DiscoverSection/DiscoverTwo';
 import Work from '../components/WorkSection/Work';
 import ScreenshotSection from '../components/ScreenshotSection/ScreenshotsTwo';
 import ReviewSection from '../components/ReviewSection/ReviewTwo';
-import PricingSection from '../components/PricingSection/PricingOne';
+// import PricingSection from '../components/PricingSection/PricingOne';
 import FaqSection from '../components/FaqSection/FaqTwo';
 import Download from '../components/DownloadSection/Download';
 import Subscribe from '../components/SubscribeSection/Subscribe';
@@ -33,7 +33,7 @@ class ThemeTwo extends Component {
                     <Work />
                     <ScreenshotSection />
                     <ReviewSection />
-                    <PricingSection />
+                    {/* <PricingSection /> */}
                     <FaqSection />
                     <Download />
                     <Subscribe />

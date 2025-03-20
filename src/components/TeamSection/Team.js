@@ -50,85 +50,106 @@ class Team extends Component {
                     <div className="row justify-content-center">
                         <div className="col-12 col-md-10 col-lg-12">
                             <div className="section-heading text-center">
-                                <h1 
-                                    className="text-capitalize" 
-                                    style={{ fontSize: '32px', color: '#00998A' }}
-                                >
-                                    {strings.integrationHeading}
-                                </h1> 
-                                <h2 
-                                    className="text-capitalize" 
-                                    style={{ fontSize: '24px', color: '#00998A' }}
-                                >
+                                <h2 className="text-capitalize" style={{ fontSize: '40px', color: '#000000' }}>
                                     {strings.integrationSubheading}
                                 </h2>
-                                <h3 
-                                    className="text-capitalize" 
-                                    style={{ fontSize: '20px', fontWeight: 'lighter', color: '#00998A' }}
-                                >
-                                    {strings.intergrationDescription}
-                                </h3>
                             </div>
                         </div>
                     </div>
 
-                    {/* Scrollable Logo Section */}
-                    <div 
-                        className="logo-container" 
-                        style={{
-                            overflowX: 'auto', 
-                            display: 'flex', 
-                            gap: '20px', 
-                            padding: '10px', 
-                            maxWidth: '800px', 
-                            margin: 'auto', 
-                            scrollbarWidth: 'thin'
-                        }}
-                    >
+                    {/* Desktop View (5 on top, 2 on bottom) */}
+                    <div className="logo-wrapper desktop-view">
+                        <div className="logo-row">
+                            {logos.slice(0, 5).map((item, idx) => (
+                                <div key={idx} className="logo-item">
+                                    <img src={item} alt={`logo-${idx}`} />
+                                </div>
+                            ))}
+                        </div>
+                        <div className="logo-row">
+                            {logos.slice(5).map((item, idx) => (
+                                <div key={idx} className="logo-item">
+                                    <img src={item} alt={`logo-${idx + 5}`} />
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Mobile View (horizontal scroll) */}
+                    <div className="mobile-slider">
                         {logos.map((item, idx) => (
-                            <div 
-                                key={idx} 
-                                style={{ minWidth: '150px', textAlign: 'center' }}
-                            >
-                                <img
-                                    src={item}
-                                    alt={`Logo ${idx + 1}`}
-                                    style={{
-                                        width: '100px',
-                                        height: '100px',
-                                        objectFit: 'contain',
-                                        borderRadius: '50%',
-                                    }}
-                                />
+                            <div key={idx} className="slider-item">
+                                <img src={item} alt={`logo-mobile-${idx}`} />
                             </div>
                         ))}
                     </div>
-
-                    {/* Integration Section */}
-                    <hr className="divider" />
-                    <div className="row ptb_50">
-                        <div className="col-12 text-center">
-                            <h3 
-                                className="integrationHeader" 
-                                style={{ color: '#00998A' }}
-                            >
-                                {strings.integrationHead}
-                            </h3>
-                        </div>
-                        <div className="col-12">
-                            <img 
-                                className="integration" 
-                                src='img/newintegration.jpeg' 
-                                style={{ width: '100%' }} 
-                                alt="Integration" 
-                            />
-                        </div>
-                    </div>
                 </div>
+
+                {/* Styling JSX Block */}
+                <style jsx>{`
+                    .logo-wrapper {
+                        width: 100%;
+                        max-width: 1000px;
+                        margin: auto;
+                    }
+
+                    .logo-row {
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        margin-bottom: 20px;
+                    }
+
+                    .logo-item {
+                        width: 20%;
+                        text-align: center;
+                        padding: 10px;
+                    }
+
+                    .logo-item img {
+                        width: 100px;
+                        height: 100px;
+                        object-fit: contain;
+                        border-radius: 50%;
+                        opacity: 0.9;
+                    }
+
+                    .mobile-slider {
+                        display: none;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        .desktop-view {
+                            display: none;
+                        }
+
+                        .mobile-slider {
+                            display: flex;
+                            overflow-x: auto;
+                            scroll-snap-type: x mandatory;
+                            -webkit-overflow-scrolling: touch;
+                            gap: 15px;
+                            padding: 10px 0;
+                        }
+
+                        .slider-item {
+                            flex: 0 0 auto;
+                            scroll-snap-align: center;
+                            text-align: center;
+                        }
+
+                        .slider-item img {
+                            width: 100px;
+                            height: 100px;
+                            object-fit: contain;
+                            border-radius: 50%;
+                            opacity: 0.9;
+                        }
+                    }
+                `}</style>
             </section>
         );
     }
 }
 
 export default Team;
-

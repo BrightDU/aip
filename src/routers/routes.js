@@ -15,7 +15,7 @@ import BlogRightSidebar from "../components/Blogs/BlogRightSidebar";
 import BlogDetailsLeftSidebar from "../components/Blogs/BlogDetailsLeftSidebar";
 import BlogDetailsRightSidebar from "../components/Blogs/BlogDetailsRightSidebar";
 import Reviews from "../components/ReviewSection/Reviews";
-import Pricing from "../components/PricingSection/Pricing";
+// import Pricing from "../components/PricingSection/Pricing";
 import DownloadPage from "../components/DownloadSection/DownloadPage";
 import SubscribePage from "../components/SubscribeSection/SubscribePage";
 import ThankYou from "../components/InnerSection/ThankYou";

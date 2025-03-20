@@ -5,11 +5,11 @@ import HeroSection from '../components/HeroSection/HeroSix';
 import FeatureSection from '../components/Features/FeatureSix';
 import ServiceSection from '../components/ServiceSection/ServiceSix';
 import DiscoverSection from '../components/DiscoverSection/DiscoverSix';
-import BrandingSection from "../components/BrandingSection/Branding";
+
 import Work from '../components/WorkSection/Work';
 import ScreenshotSection from '../components/ScreenshotSection/ScreenshotsOne';
 import ReviewSection from '../components/ReviewSection/ReviewOne';
-import PricingSection from '../components/PricingSection/PricingOne';
+// import PricingSection from '../components/PricingSection/PricingOne';
 import FaqSection from '../components/FaqSection/FaqOne';
 import Download from '../components/DownloadSection/Download';
 import Subscribe from '../components/SubscribeSection/Subscribe';
@@ -31,12 +31,12 @@ class ThemeSix extends Component {
                     <HeroSection />
                     <ServiceSection />
                     <DiscoverSection />
-                    <BrandingSection />
+                   
                     <Work />
                     <ReviewSection />
                     <FeatureSection />
                     <ScreenshotSection />
-                    <PricingSection />
+                    {/* <PricingSection /> */}
                     <FaqSection />
                     <Team />
                     <Download />

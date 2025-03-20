@@ -483,35 +483,6 @@ img {
     transform: rotate(180deg);
 }
 
-/*BACKGROUND OVERLAY*/
-.bg-overlay,
-.overlay-dark {
-    position: relative;
-    z-index: 0;
-}
-
-.bg-overlay::after,
-.overlay-dark:after {
-    position: absolute;
-    content: '';
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-}
-
-.bg-overlay::after {
-    opacity: 0.94;
-    z-index: -1;
-}
-
-.overlay-dark::after {
-    background-color: rgba(16, 16, 45, 1);
-    opacity: 0.80;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
-    z-index: -1;
-}
-
 /*BACKGROUND COLORS*/
 .bg-gray {
     background-color: #f6f9fe;
@@ -584,7 +555,24 @@ img {
 }
 
 .homepage-5 .welcome-area {
-    background: rgba(0, 0, 0, 0) url("/img/Work-From-Home-Jobs-5.webp") no-repeat scroll center center / cover;
+    background: rgba(0, 0, 0, 0) url("/img/landing page assets/Heroimage.png") no-repeat scroll center center / cover;
+}
+
+.homepage-5 .welcome-area::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+    z-index: 1;
+}
+
+/* Ensures text stays above the dark overlay */
+.homepage-5 .welcome-area > * {
+    position: relative;
+    z-index: 2;
 }
 
 .homepage-6 .welcome-area {
@@ -612,7 +600,7 @@ img {
 }
 
 .breadcrumb-area {
-    background: rgba(0, 0, 0, 0) url("/img/Work-From-Home-Jobs-5.webp") no-repeat scroll center center / cover;
+    background: rgba(0, 0, 0, 0) url("/img/landing page assets/Heroimage.png") no-repeat scroll center center / cover;
 }
 
 .blog .breadcrumb-area {
@@ -628,7 +616,7 @@ img {
 }
 
 .inner .welcome-area {
-    background: rgba(0, 0, 0, 0) url("/img/Work-From-Home-Jobs-5.webp") no-repeat scroll center center / cover;
+    background: rgba(0, 0, 0, 0) url("/img/landing page assets/Heroimage.png") no-repeat scroll center center / cover;
 }
 
 /* ******************************
@@ -2323,3 +2311,20 @@ img {
 .features-area{
     background-color: #ffffff;
 }
+
+
+
+
+ 
+ 
+
+
+
+  
+ 
+
+
+
+  /* .start-trial-button {
+    width: 100%;
+  } */

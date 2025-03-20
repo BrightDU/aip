@@ -10,7 +10,7 @@ import DiscoverSection from '../components/DiscoverSection/DiscoverOne';
 import Work from '../components/WorkSection/Work';
 import ScreenshotSection from '../components/ScreenshotSection/ScreenshotsOne';
 import ReviewSection from '../components/ReviewSection/ReviewOne';
-import PricingSection from '../components/PricingSection/PricingOne';
+// import PricingSection from '../components/PricingSection/PricingOne';
 import FaqSection from '../components/FaqSection/FaqOne';
 import Download from '../components/DownloadSection/Download';
 import Subscribe from '../components/SubscribeSection/Subscribe';
@@ -38,7 +38,7 @@ class ThemeOne extends Component {
                     <Work />
                     <ScreenshotSection />
                     <ReviewSection />
-                    <PricingSection />
+                    {/* <PricingSection /> */}
                     <FaqSection />
                     <Team />
                     <Download />

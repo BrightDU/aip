@@ -7,7 +7,7 @@ import ServiceSection from '../components/ServiceSection/ServiceThree';
 import DiscoverSection from '../components/DiscoverSection/DiscoverThree';
 import Work from '../components/WorkSection/Work';
 import ReviewSection from '../components/ReviewSection/ReviewOne';
-import PricingSection from '../components/PricingSection/PricingTwo';
+// import PricingSection from '../components/PricingSection/PricingTwo';
 import Download from '../components/DownloadSection/Download';
 import Subscribe from '../components/SubscribeSection/Subscribe';
 import ContactSection from '../components/ContactSection/Contact';
@@ -30,7 +30,7 @@ class ThemeThree extends Component {
                     <ServiceSection />
                     <DiscoverSection />
                     <ReviewSection />
-                    <PricingSection />
+                    {/* <PricingSection /> */}
                     <Subscribe />
                     <Download />
                     <ContactSection />
