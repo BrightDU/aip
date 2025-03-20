@@ -87,22 +87,22 @@ const Counter = () => {
         <CounterItem
           value={stats.companies}
           label={strings.Company}
-          icon="/img/landing page assets/Companies icon.png"
+          icon="/img/Landing page assets/Companies icon.png"
         />
         <CounterItem
           value={stats.aiDistributors}
           label={strings.AIDistributors}
-          icon="/img/landing page assets/Aicontributions.png"
+          icon="/img/Landing page assets/Aicontributions.png"
         />
         <CounterItem
           value={stats.users}
           label={strings.Users}
-          icon="/img/landing page assets/Usersicon.png"
+          icon="/img/Landing page assets/Usersicon.png"
         />
         <CounterItem
           value={stats.products}
           label={strings.Products}
-          icon="/img/landing page assets/Products icon.png"
+          icon="/img/Landing page assets/Products icon.png"
         />
       </div>
     </section>

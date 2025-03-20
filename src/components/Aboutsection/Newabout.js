@@ -52,7 +52,7 @@ const AboutPage = () => {
               ></iframe>
             </div>
             <img
-              src="/img/landing page assets/yellowandgreen.png"
+              src="/img/Landing page assets/Yellowandgreen.png"
               alt="Icon"
               className="video-icon"
               style={{ marginTop: '-80px', height: '120px', width: '80px' }}
@@ -70,7 +70,7 @@ const AboutPage = () => {
 
         <div className="center-image-container mt-5 d-flex justify-content-center">
           <img
-            src="/img/landing page assets/coinimage.png"
+            src="/img/Landing page assets/coinimage.png"
             alt="Centered Coin"
             className="center-image"
           />
