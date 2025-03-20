@@ -33,9 +33,7 @@ function FaqSection() {
                 <div className="row justify-content-center">
                     <div className="col-12 col-md-10 col-lg-7">
                         {/* Section Heading */}
-                        <div className="section-heading text-center">
-                            <h2 className="text-capitalize">{strings.faq}</h2>
-                        </div>
+                       
                     </div>
                 </div>
                 <div className="row justify-content-center">
