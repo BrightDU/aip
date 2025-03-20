@@ -70,7 +70,7 @@ class FooterSection extends Component {
                                         <div className="footer-items"  >
                                             {/* Footer Title */}
                                             <div className='footer-logo'style={{marginTop:'-70px'}}>
-                                            <img src="/img/new_company_logo.png" alt="fecebook Icon" style={{ width: 300, height: 100 }} />
+                                            <img src="/img/new_company_logo.png" alt="fecebook Icon" style={{ width: 150, height: 50 }} />
                                              
                                             <h3 className="logo-text mb-2 "id='logo-text' style={{ textAlign: strings.direction ,color:'#000000', fontSize:'14px', fontWeight: "300"   }}>{strings.footerlogotext}</h3>
                                             </div>

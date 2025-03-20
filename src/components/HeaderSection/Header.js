@@ -133,13 +133,13 @@ class Header extends Component {
                     <Link to="/">
                         <img
                             className="navbar-brand-regular"
-                            style={{ width: "200px", height: "50.78px" }}
+                            style={{ width: "150px", height: "40px" }}
                             src="/img/new_company_logo.png"  // Updated PNG path
                             alt="brand-logo"
                         />
                         <img
                             className="navbar-brand-sticky"
-                            style={{ width: "200px", height: "55.78px" }}
+                            style={{ width: "150px", height: "40px" }}
                             src="/img/new_company_logo.png"  // Updated PNG path
                             alt="sticky brand-logo"
                         />
