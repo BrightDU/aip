@@ -53,7 +53,7 @@ export default function TemporaryDrawer(props) {
             <li className="nav-item">
               <a
                 className="nav-link"
-                href={`/terms-and-conditions-${strings.getLanguage()}.pdf`}
+                href={`/#`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
