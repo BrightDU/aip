@@ -31,11 +31,11 @@ class FeatureSection extends Component {
     const { isVisible } = this.state;
 
     const services = [
-      { icon: '/img/landing page assets/CloudCheck.png', title: strings.service1Title },
-      { icon: '/img/landing page assets/Devices.png', title: strings.service2Title },
-      { icon: '/img/landing page assets/Gauge.png', title: strings.service3Title },
-      { icon: '/img/landing page assets/Network.png', title: strings.service4Title },
-      { icon: '/img/landing page assets/Files.png', title: strings.service5Title },
+      { icon: '/img/Landing page assets/CloudCheck.png', title: strings.service1Title },
+      { icon: '/img/Landing page assets/Devices.png', title: strings.service2Title },
+      { icon: '/img/Landing page assets/Gauge.png', title: strings.service3Title },
+      { icon: '/img/Landing page assets/Network.png', title: strings.service4Title },
+      { icon: '/img/Landing page assets/Files.png', title: strings.service5Title },
     ];
 
     return (

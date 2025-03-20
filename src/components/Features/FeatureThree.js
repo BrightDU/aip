@@ -25,12 +25,12 @@ class FeatureSection extends Component {
 
     render() {
         const features = [
-            { title: strings.feature1Title, description: strings.feature1Description, imgSrc: '/img/landing page assets/cash icon.png' }, // Top
-            { title: strings.feature2Title, description: strings.feature2Description, imgSrc: '/img/landing page assets/Coins icon.png' },      // Right-top
-            { title: strings.feature3Title, description: strings.feature3Description, imgSrc: '/img/landing page assets/Ai icon.png' },     // Right-bottom
-            { title: strings.feature4Title, description: strings.feature4Description, imgSrc: '/img/landing page assets/Mobile phone icon.png' },      // Bottom
-            { title: strings.feature5Title, description: strings.feature5Description, imgSrc: '/img/landing page assets/Comprehensive icon.png' },     // Left-bottom
-            { title: strings.feature6Title, description: strings.feature6Description, imgSrc: '/img/landing page assets/Access dashboard icon.png' }      // Left-top
+            { title: strings.feature1Title, description: strings.feature1Description, imgSrc: '/img/Landing page assets/cash icon.png' }, // Top
+            { title: strings.feature2Title, description: strings.feature2Description, imgSrc: '/img/Landing page assets/Coins icon.png' },      // Right-top
+            { title: strings.feature3Title, description: strings.feature3Description, imgSrc: '/img/Landing page assets/Ai icon.png' },     // Right-bottom
+            { title: strings.feature4Title, description: strings.feature4Description, imgSrc: '/img/Landing page assets/Mobile phone icon.png' },      // Bottom
+            { title: strings.feature5Title, description: strings.feature5Description, imgSrc: '/img/Landing page assets/Comprehensive icon.png' },     // Left-bottom
+            { title: strings.feature6Title, description: strings.feature6Description, imgSrc: '/img/Landing page assets/Access dashboard icon.png' }      // Left-top
         ];
 
 
