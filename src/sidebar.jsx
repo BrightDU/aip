@@ -88,7 +88,7 @@ export default function TemporaryDrawer(props) {
                   // Add Sign In logic
                 }}
               >
-                Sign In
+                 {strings.Signin}
               </button>
             </li>
 
@@ -110,7 +110,7 @@ export default function TemporaryDrawer(props) {
                   // Add Sign Up logic
                 }}
               >
-                Sign Up
+                 {strings.SignUp}
               </button>
             </li>
 
@@ -121,12 +121,13 @@ export default function TemporaryDrawer(props) {
                 className="btn"
                 style={{
                   width: '100%',
-                  background: 'none',
+                  background: "#001E1C",
+                  color: 'white', // Text color black
                   border: '2px solid black',
                   borderRadius: 0,
                   padding: '10px',
                   fontWeight: 'bold',
-                  color: 'black',
+                  
                   cursor: 'pointer',
                 }}
                 onClick={() => {
